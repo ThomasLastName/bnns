@@ -3,7 +3,7 @@ try:
     print("relative import worked")
 except:
     try:
-        from bnns import func
+        from bnns.SSGE import func
         print("absolute import worked")
     except:
             import os
@@ -16,7 +16,7 @@ except:
                 if len(dirname)==0:
                     raise Exception(f"bnns is not an ancestor of {os.getcwd()}")
             sys.path.append(path)
-            from bnns import func
+            from bnns.SSGE import func
             print("hacked import worked")
 
 func()
