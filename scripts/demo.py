@@ -16,7 +16,7 @@ except:
                 context, dirname = os.path.split(path)
                 if len(dirname)==0:
                     raise Exception(f"bnns is not an ancestor of {os.getcwd()}")
-            sys.path.append(path)
+            sys.path.insert(0,path)
             print(f"adding {path} to the PATH")
             from bnns.SSGE import func
             print("hacked import worked")
