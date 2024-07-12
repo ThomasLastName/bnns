@@ -16,6 +16,7 @@ except:
                 if len(dirname)==0:
                     raise Exception(f"bnns is not an ancestor of {os.getcwd()}")
             sys.path.append(path)
+            from bnns import func
             print("hacked import worked")
 
 func()
