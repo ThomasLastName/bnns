@@ -2,7 +2,7 @@ try:
     # import sys
     # original_path = sys.path
     from bnns.SSGE import func
-except:
+except ModuleNotFoundError:
     #
     # ~~~ Add the root directory of the repo to sys.path
     # assert sys.path==original_path    # it is
