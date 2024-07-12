@@ -1,11 +1,11 @@
 try:
-    import sys
-    original_path = sys.path
+    # import sys
+    # original_path = sys.path
     from bnns.SSGE import func
 except:
     #
     # ~~~ Add the root directory of the repo to sys.path
-    assert sys.path==original_path
+    # assert sys.path==original_path    # it is
     import sys
     import os
     path = os.getcwd()
