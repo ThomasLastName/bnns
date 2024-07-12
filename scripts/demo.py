@@ -1,12 +1,9 @@
 try:
     from bnns.SSGE import func
-    print("absolute import worked")
 except:
     #
     # ~~~ Add the root directory of the repo to sys.path
     import sys
-    # from quality_of_life.my_base_utils import find_root_dir_of_repo
-    # sys.path.append(find_root_dir_of_repo())
     import os
     path = os.getcwd()
     while not os.path.exists(os.path.join(path,".git")):
