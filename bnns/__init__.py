@@ -1,1 +1,1 @@
-from SSGE import *
+import SSGE
